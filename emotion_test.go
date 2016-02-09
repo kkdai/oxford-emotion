@@ -29,7 +29,7 @@ func TestEmotion(t *testing.T) {
 		t.Error("Cannot connect to server")
 	}
 
-	res, err := e.EmotionUrl("http://www.skanaa.com/assets/images/news/20151112/5644565fa81bb78c538b4567.jpg")
+	res, err := e.EmotionUrl("https://oxfordportal.blob.core.windows.net/emotion/recognition1.jpg")
 
 	if err != nil {
 		t.Error("Error happen on :", err.Err)
