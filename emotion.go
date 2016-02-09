@@ -14,20 +14,20 @@ func NewEmotion(key string) *Emotion {
 		return nil
 	}
 
-	f := new(Emotion)
-	f.client = NewClient(key)
-	return f
+	e := new(Emotion)
+	e.client = NewClient(key)
+	return e
 }
 
 func (e *Emotion) detect(data *bytes.Buffer, useJson bool) ([]byte, *ErrorResponse) {
 	url := getEmotionURL()
-	return f.client.Connect("POST", url, data, useJson)
+	return e.client.Connect("POST", url, data, useJson)
 }
 
 //Detect Emotion with input URL
 func (e *Emotion) EmotionUrl(url string) ([]byte, *ErrorResponse) {
 	data := getUrlByteBuffer(url)
-	return f.detect(data, true)
+	return e.detect(data, true)
 }
 
 //Detect Emotion with input image file path
@@ -36,5 +36,5 @@ func (e *Emotion) EmotionFile(filePath string) ([]byte, *ErrorResponse) {
 	if err != nil {
 		return nil, &ErrorResponse{Err: errors.New("File path err:" + err.Error())}
 	}
-	return f.detect(data, false)
+	return e.detect(data, false)
 }
