@@ -24,4 +24,15 @@ func TestEmotion(t *testing.T) {
 		return
 	}
 
+	e := NewEmotion(API_KEY)
+	if e == nil {
+		t.Error("Cannot connect to server")
+	}
+
+	res, err := e.EmotionUrl("http://www.skanaa.com/assets/images/news/20151112/5644565fa81bb78c538b4567.jpg")
+
+	if err != nil {
+		t.Error("Error happen on :", err.Err)
+	}
+	fmt.Println("Got response:", string(res))
 }

@@ -1,45 +1,20 @@
-Project Oxford Face API for Golang
+Project Oxford Emotion API for Golang
 ======================
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kkdai/oxford-face/master/LICENSE)  [![GoDoc](https://godoc.org/github.com/kkdai/oxford-face?status.svg)](https://godoc.org/github.com/kkdai/oxford-face)  [![Build Status](https://travis-ci.org/kkdai/oxford-face.svg)](https://travis-ci.org/kkdai/oxford-face)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/kkdai/oxford-emotion/master/LICENSE)  [![GoDoc](https://godoc.org/github.com/kkdai/oxford-face?status.svg)](https://godoc.org/github.com/kkdai/oxford-emotion)  [![Build Status](https://travis-ci.org/kkdai/oxford-emotion.svg)](https://travis-ci.org/kkdai/oxford-emotion)
  
-![](https://www.projectoxford.ai/images/bright/face/FaceAPI-Main.png)
+![](https://www.projectoxford.ai/images/bright/emotion/EmotionAPI.png)
  
-This package is [Project Oxford](https://www.projectoxford.ai/) [Face API](https://www.projectoxford.ai/face) in Golang
+This package is [Project Oxford](https://www.projectoxford.ai/) [Face API](https://www.projectoxford.ai/emotion) in Golang
 
-What is Project Oxford Face API
+What is Project Oxford Emotion API
 ---------------
 
-[Project Oxford](https://www.projectoxford.ai/) is a web services from Microsoft. It contains following services. (refer from this [page](https://www.projectoxford.ai/face).)
-
-#### Face Detection
-![](https://www.projectoxford.ai/images/bright/face/FaceDetection.png)  
-
-To detect human faces in image with face rectangles and face attributes including face landmarks, pose, and machine learning-based predictions of gender and age.
-
-#### Face Verification
-![](https://www.projectoxford.ai/images/bright/face/FaceVerification.png)
-
-To check two faces belonging to same person or not, with confidence score.
-
-##### Similar Face Searching
-![](https://www.projectoxford.ai/images/bright/face/SimilarFaceSearching.png)
-
-To find similar-looking faces from many faces by a query face.
-
-#### Face Grouping
-![](https://www.projectoxford.ai/images/bright/face/FaceGrouping.png)
-
-To organize many faces into face groups based on their visual similarity.
-
-#### Face Identification
-![](https://www.projectoxford.ai/images/bright/face/FaceIdentification.png)
-
-To search which specific person entity a query face belongs to, from user-provided person-face data.
+[Project Oxford](https://www.projectoxford.ai/) is a web services from Microsoft. It contains following services. (refer from this [page](https://www.projectoxford.ai/emotion).)
 
 Installation
 ---------------
 ```
-go get github.com/kkdai/oxford-face
+go get github.com/kkdai/oxford-emotion
 ```
 
 How to use it
@@ -80,7 +55,7 @@ The code submitting to PR must be filtered with `gofmt`
 Inspired
 ---------------
 
-- [Project Oxford: Face API](https://www.projectoxford.ai/face)
+- [Project Oxford: Emotion API](https://www.projectoxford.ai/emotion)
 
 Project52
 ---------------
